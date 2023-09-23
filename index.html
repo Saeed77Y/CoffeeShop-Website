@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Coffee Website</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <script src="assets/js/script.js" defer></script>
+        <script src="https://kit.fontawesome.com/33ffa321b5.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <i class="fa-solid fa-bars" id="bars" onclick="ShowNavbar()"></i>
+        <div class="hiddennavbar" id="nav">
+            <i class="fa-solid fa-xmark" id="xmark" onclick="CloseNavbar()"></i>
+            <a class="leftnav" href="#"><img src="assets/picture/logo.png" width="40" alt="Logo">ECoffee</a>
+            <i class="fa-regular fa-moon rightnav" id="productnav" onclick="ChangeTheme()"></i>
+            <a class="rightnav" href="#" >Home</a>
+            <a class="rightnav" href="#journey">Journey</a>
+            <a class="rightnav" href="#reserve">Reserve</a>
+            <a class="rightnav" href="#product">Product</a>
+        </div>
+        <div class="welcome">
+            <img id="CoffeeMachine" src="assets/picture/coffee_machine.png" alt="Coffee Machine">
+            <div id="welcometxt">
+                <h2 class="wlccol2">Welcome to our coffee shop</h2>
+                <p class="wlccol2">You can order every coffee you want and we are here to meet your needs.</p>
+            </div>
+            <input class="btn wlccol2" id="btn1" type="button" value="Get started">
+        </div>
+        <div id="journey">
+            <h1 id="txt1" class="center">Start to have journey in your coffee</h1>
+            <img class="JCol1 JPic" src="assets/picture/latte.png" width="115px" height="100px" alt="Latte">
+            <h3 class="JCol1 JHead center">Best Coffee</h3>
+            <p class="JCol1 JSentence center">Drink the best coffee you have ever drunk.</p>
+            <img class="JCol2 JPic" src="assets/picture/coffee_shop.png" width="115px" height="100px" alt="Coffee Shop">
+            <h3 class="JCol2 JHead center">Beautiful view</h3>
+            <p class="JCol2 JSentence center">You can sit and talk with your friends and enjoy the environment.</p>
+            <img class="JCol3 JPic" src="assets/picture/percentage.png" width="120px" height="100px" alt="Discount">
+            <h3 class="JCol3 JHead center">Offering</h3>
+            <p class="JCol3 JSentence center">Buy the best latte with the best cost.</p>
+        </div>
+        <div class="Container" id="reserve">
+            <h1 class="txt2 center" id="reserveh">Reserve your table now</h1>
+            <p class="txt2 center" id="reservep">You can reserve your table every time with everyone you want, come here we are waiting.</p>
+            <input class="btn" id="btn2" type="button" value="Reserve"><br>
+            <img id="Barista1" src="assets/picture/waiter-making-coffee-3462715-2903816.png" width="400" height="467" alt="Barista">
+        </div>
+        <div id="product">
+            <h2 class="center product_header">Also we have product</h2>
+            <div class="product_container">
+                <div class="card c1">
+                    <img class="card_circle1" src="assets/picture/coffee_bean.png" width="100" alt="Coffee Bean">
+                    <h2 class="card_txt">$35</h2>
+                    <p class="card_txt">Coffee Been</p>
+                    <i class="fa-regular fa-heart card_circle2" id="heart1" onclick="like1()"></i>
+                </div>
+                <div class="card c2">
+                    <img class="card_circle1" src="assets/picture/shake.png" width="100" alt="Milkshake">
+                    <h2 class="card_txt">$45</h2>
+                    <p class="card_txt">Milkshake</p>
+                    <i class="fa-regular fa-heart card_circle2" id="heart2" onclick="like2()"></i>
+                </div>
+                <div class="card c3">
+                    <img class="card_circle1" src="assets/picture/cup_.png" width="100" alt="Cappuccino">
+                    <h2 class="card_txt">$55</h2>
+                    <p class="card_txt">Cappuccino</p>
+                    <i class="fa-regular fa-heart card_circle2" id="heart3" onclick="like3()"></i>
+                </div>
+                <div class="card c4">
+                    <img class="card_circle1" src="assets/picture/Hot_chocolate.png" width="100" alt="Hot Chocolate">
+                    <h2 class="card_txt">$65</h2>
+                    <p class="card_txt">Hot Chocolate</p>
+                    <i class="fa-regular fa-heart card_circle2" id="heart4" onclick="like4()"></i>
+                </div>
+            </div>
+        </div>
+        <div class="Container PhoneSize">
+            <h1 id="txt3">Input your phone</h1>
+            <input class="input WhiteBox" id="Phone" type="tel" placeholder="Phone number">
+            <input class="input WhiteBox" id="Date" type="datetime" placeholder="Date and time">
+            <input class="input btn" id="btn3" type="submit" value="Send">
+            <img id="Barista2" src="assets/picture/man_with_coffee.png" alt="Barista">
+        </div>
+        <footer>
+            <img class="gridcls ECoffee FooterLogo" src="assets/picture/logo.png" width="39" alt="Logo">
+            <a href="#" class="gridcls ECoffee clr clrid">ECoffee</a>
+            <p class="gridcls Paragraph clr">Dark like your coffee<br>White like your suger</p>
+            <h3 class="gridcls  OurServices clr">Our Services</h3>
+            <div>
+                <div class="gridcls Pricing"><a href="#" class="clr clrid">Pricing</a></div>
+                <div class="gridcls Discounts"><a href="#" class="clr clrid">Discounts</a></div>
+                <div class="gridcls ShippingMode"><a href="#" class="clr clrid">Shipping mode</a></div>
+            </div>
+            <h3 class="gridcls Support clr">Support</h3>
+            <div>
+                <div class="gridcls FAQs"><a href="#" class="clr clrid">FAQs</a></div>
+                <div class="gridcls SupportCenter"><a href="#" class="clr clrid">Support center</a></div>
+                <div class="gridcls ContactUs"><a href="#" class="clr clrid">Contact us</a></div>
+            </div>
+            <h3 class="gridcls AvaliableOn clr">Avaliable On</h3>
+            <a href="#"><img class="gridcls GooglePlay" src="assets/picture/aviable1.png" width="120" alt="Google Play"></a>
+            <img class="gridcls AppStore" src="assets/picture/aviable2.png" width="120" alt="App Store">
+        </footer>
+    </body>
+</html>
